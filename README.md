@@ -1,84 +1,54 @@
-# Sistema de Cadastro de Alunos, Disciplinas e Notas
+<div align="center">
 
-Este projeto é um sistema simples de gerenciamento de alunos, disciplinas e notas, feito em Python. Ele permite o cadastro de alunos, disciplinas e lançamento de notas, com funcionalidades para listar as informações cadastradas.
+# 🎓 Cadastro Acadêmico — Python CLI
+### Alunos, disciplinas e notas no terminal
 
-## Funcionalidades
+![Python](https://img.shields.io/badge/Python-3-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![CLI](https://img.shields.io/badge/Interface-Terminal-334155?style=for-the-badge)
 
-### 1. **Cadastrar Aluno** 
-- **Nome** do aluno (apenas letras).
-- **Matrícula** (12 dígitos numéricos).
-- **Data de nascimento** (verificação de idade mínima de 18 anos).
+</div>
 
-### 2. **Listar Alunos** 
-- Exibe uma lista com o nome, matrícula e idade dos alunos cadastrados.
+## 🎯 Visão geral
 
-### 3. **Cadastrar Disciplina**
-- **Nome da disciplina**.
-- **Nome do professor**.
-- **Turno** (Manhã/Tarde/Noite).
-- **Sala**.
+Projeto de estudo em **Python** com menu interativo para cadastrar e listar alunos, disciplinas e notas. Os registros são armazenados em listas e dicionários **na memória durante a execução**.
 
-### 4. **Listar Disciplinas**
-- Exibe uma lista com o nome da disciplina, professor, turno e sala.
+## ✨ Funcionalidades
 
-### 5. **Cadastrar Nota**
-- Lançamento de **notas** para alunos em disciplinas específicas.
-- Verifica se já existe uma **nota** para o aluno e a disciplina.
-- Permite a **alteração da nota** caso já exista um registro.
+| Recurso | Descrição |
+|---|---|
+| 👩‍🎓 Cadastro de alunos | Nome, matrícula numérica e data de nascimento |
+| 📋 Consulta de alunos | Listagem dos registros cadastrados |
+| 📚 Disciplinas | Cadastro e listagem de professor, turno e sala |
+| 📝 Notas | Registro e consulta das avaliações |
+| ✅ Validação | Verificações simples de campos e formato de data |
 
-### 6. **Listar Notas**
-- Exibe uma lista com o nome do aluno, matrícula, disciplina, nota e status (Aprovado/Reprovado).
-
----
-
-## Requisitos
-
-- Python 3.x
-
----
-
-## Como Executar
-
-1. Clone o repositório:
-    ```bash
-    git clone https://github.com/SEU_USUARIO/nome-do-repositorio.git
-    ```
-
-2. Navegue até o diretório do projeto:
-    ```bash
-    cd nome-do-repositorio
-    ```
-
-3. Execute o script Python:
-    ```bash
-    python3 sistema.py
-    ```
-
----
-
-## Exemplo de Uso
-
-Quando o sistema for iniciado, será exibido um menu com as seguintes opções:
+## 🏗️ Estrutura
 
 ```text
-Menu:
-1 - Cadastrar aluno
-2 - Listar alunos
-3 - Cadastrar disciplina
-4 - Listar disciplinas
-5 - Cadastrar nota
-6 - Listar notas
-7 - Sair
+Sistema_Cadastro_test/
+├── main.py       # Menu, validações e lógica
+└── README.md
+```
 
+## 🚀 Execução
 
----
+Sem dependências externas além de Python 3:
 
-### O que foi feito na formatação:
+```bash
+git clone https://github.com/WalterMatheusgg/Sistema_Cadastro_test.git
+cd Sistema_Cadastro_test
+python3 main.py
+```
 
-- **Listas ordenadas e não ordenadas**: Organizei as funcionalidades e os passos para ficar bem claro.
-- **Blocos de código**: Coloquei exemplos de uso e de comandos como `git clone`, `cd`, e `python3 sistema.py` em blocos de código para facilitar a leitura.
-- **Negrito e itálico**: Usei para destacar palavras-chave e conceitos importantes como "Cadastrar Aluno", "Listar Alunos", etc.
-- **Cabeçalhos**: Dividi as seções com cabeçalhos para facilitar a navegação do `README`.
-- **Links**: Usei o link para a licença MIT e também deixei em formato padrão para que as pessoas possam facilmente localizar.
+## 🔧 Limitações conhecidas
 
-Com isso, o seu `README.md` estará bem formatado, organizado e fácil de entender! Se precisar de mais alguma coisa, é só falar!
+- Dados não são persistidos após encerrar o processo.
+- O cálculo de idade utiliza **2025 como ano fixo**; é um exercício, não uma rotina adequada à produção.
+- As validações e o tratamento de erros podem ser ampliados.
+- Não há banco de dados, testes automatizados ou interface web neste repositório.
+
+Para conhecer uma versão mais elaborada com interface e SQLite, veja o [**Sistema de Gestão Escolar**](https://github.com/WalterMatheusgg/Sistema_de_Gestao_Escolar).
+
+## 👨‍💻 Autor
+
+**Walter Matheus Soares da Silva** · [GitHub](https://github.com/WalterMatheusgg)
